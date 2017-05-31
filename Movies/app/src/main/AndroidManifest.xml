@@ -19,13 +19,17 @@
         </activity>
         <activity
             android:name=".MovieDetailsActivity"
-            android:label="@string/title_movie_detail"
             android:parentActivityName=".MovieActivity"
+            android:theme="@style/movie_details_activity_theme">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.fi2infinity.movies.MovieActivity" />
+           <!-- android:label="@string/title_movie_detail"
             android:theme="@style/AppTheme.NoActionBar"
             tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.fi2infinity.movies.MovieActivity" />
+                android:value="com.fi2infinity.movies.MovieActivity" />-->
         </activity>
     </application>
 
